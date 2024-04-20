@@ -1,0 +1,33 @@
+modLoader = "javafml"
+loaderVersion = "[47,)"
+license = "MIT License"
+
+[[mods]]
+modId = "jech_rei_compatibility"
+version = "${version}"
+displayName = "Jech Rei Compatibility"
+authors = "vfyjxf"
+description = '''
+Jech Rei Compatibility Mod.
+'''
+
+[[dependencies.jech_rei_compatibility]]
+modId = "forge"
+mandatory = true
+versionRange = "[47,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.jech_rei_compatibility]]
+modId = "minecraft"
+mandatory = true
+versionRange = "[1.20.1,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.jech_rei_compatibility]]
+modId = "jecharacters"
+mandatory = true
+versionRange = "[4.5,)"
+ordering = "AFTER"
+side = "CLIENT"
