@@ -3,6 +3,7 @@ package dev.vfyjxf.jrc;
 import me.shedaniel.rei.api.client.search.method.InputMethod;
 import me.shedaniel.rei.api.common.util.CollectionUtils;
 import net.minecraft.network.chat.Component;
+import net.minecraft.network.chat.TextComponent;
 
 import java.util.Collections;
 import java.util.List;
@@ -38,11 +39,11 @@ public class JechInputMethod implements InputMethod<String> {
 
     @Override
     public Component getName() {
-        return Component.literal("Jech兼容性输入法");
+        return new TextComponent("Jech兼容性输入法");
     }
 
     @Override
     public Component getDescription() {
-        return Component.literal("Jech的Rei兼容性输入法");
+        return new TextComponent("Jech的Rei兼容性输入法");
     }
 }
